@@ -27,7 +27,7 @@ export default function Home() {
         </Link>
 
         {/* Secondary CTA: Static */}
-        <Link href="/static">
+        <Link href="3d.adam-ladhari.me">
           <button className="w-full px-6 py-3 text-sm font-medium text-white bg-gray-700 border border-gray-600 rounded-lg hover:bg-gray-600 transition-all">
             View Static Version
           </button>
