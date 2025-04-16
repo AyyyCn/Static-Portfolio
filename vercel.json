@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/3D",
-        "destination": "https://portfolio-ayyycns-projects.vercel.app/"
+        "destination": "3d.adam-ladhari.me"
       }
     ]
   }
