@@ -17,7 +17,7 @@ export default function Home() {
         </p>
 
         {/* Primary CTA: 3D Portfolio */}
-        <Link href="/3D">
+        <Link href="3d.adam-ladhari.me">
         <button
     className="w-full px-6 py-4 text-lg font-semibold text-black rounded-lg transition-all hover:brightness-110"
     style={{ backgroundColor: '#eab076' }}
@@ -27,7 +27,7 @@ export default function Home() {
         </Link>
 
         {/* Secondary CTA: Static */}
-        <Link href="3d.adam-ladhari.me">
+        <Link href="/static">
           <button className="w-full px-6 py-3 text-sm font-medium text-white bg-gray-700 border border-gray-600 rounded-lg hover:bg-gray-600 transition-all">
             View Static Version
           </button>
