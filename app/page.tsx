@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main
       className="flex items-center justify-center h-screen bg-cover bg-center px-4 text-white"
-      style={{ backgroundImage: 'url("/bkg.jpg")' }}
+      style={{ backgroundImage: 'url("/bkg2.jpg")' }}
     >
       <div className="bg-black/30 backdrop-blur-md p-10 rounded-2xl text-center shadow-2xl border border-white/20 max-w-xl w-full space-y-8">
         <h1 className="text-4xl md:text-5xl font-bold">
@@ -17,7 +17,7 @@ export default function Home() {
         </p>
 
         {/* Primary CTA: 3D Portfolio */}
-        <Link href="https://portfolio-ayyycns-projects.vercel.app">
+        <Link href="/3D">
         <button
     className="w-full px-6 py-4 text-lg font-semibold text-black rounded-lg transition-all hover:brightness-110"
     style={{ backgroundColor: '#eab076' }}

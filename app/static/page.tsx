@@ -7,7 +7,14 @@ import ProjectSlider from './components/ProjectSlider';
 import { sections } from './data/sections';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useSwipeable } from 'react-swipeable';
+import { FaEnvelope, FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
+const iconMap = {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+};
 const variants: Variants = {
   enter: (direction: number) => ({
     x: direction > 0 ? 300 : -300,
@@ -81,7 +88,7 @@ export default function StaticPortfolio() {
               <ProjectSlider projects={sections[index].projects || []} />
             ) : 'images' in sections[index] ? (
               <div className="flex flex-col items-center gap-6">
-                <SlideCard content={sections[index].content} />
+                <SlideCard content={sections[index].content ?? ""} />
                 <div className="flex flex-wrap justify-center gap-4">
                   {sections[index].images!.map((src: string, i: number) => (
                     <img
@@ -96,8 +103,8 @@ export default function StaticPortfolio() {
             ) : (
               'icons' in sections[index] ? (
   <div className="flex justify-center gap-8">
-    {sections[index].icons.map((item, i) => {
-      const Icon = require('react-icons/fa')[item.icon];
+    {sections[index].icons!.map((item, i) => {
+      const Icon = iconMap[item.icon as keyof typeof iconMap];
       return (
         <a
           key={i}
