@@ -3,8 +3,15 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  @apply text-black; /* Or text-gray-300, etc */
+  /* globals.css */
+
+
   min-height: 100vh;
   background: linear-gradient(135deg, #0f0f23, #1a1a2e);
-  color: #fff;
+  color: #292929;
   overflow-x: hidden;
+}
+.text-shadow {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
